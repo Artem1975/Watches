@@ -1,0 +1,22 @@
+.navigation {
+    background-color: #EBEBEB;
+}
+
+.nav li {
+    padding-bottom: 5px;
+}
+
+.nav li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: #EBEBEB;
+}
+
+.sub-menu li {
+    margin: 0;
+}
