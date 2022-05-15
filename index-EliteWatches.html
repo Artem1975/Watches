@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
+    <!-- Кадировка сайта -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google шрифт Antonio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;700&display=swap" rel="stylesheet">  
+    <link rel="shortcut icon" href="img/mini-logo.png" type="image/x-icon"> 
+    <!-- CSS стили --> 
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index-watches.css">
     <link rel="stylesheet" href="css/style.css">  
     <link rel="shortcut icon" href="img/mini-logo.png" type="image/x-icon">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Аналитика -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2WPLWH500"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,10 +25,15 @@
     <title>Элитные часы</title>
 </head>
 <body>
+    <!-- Шапка сайта -->
     <div class="header header-fixed">
+        <!-- Контейнер сайта -->
         <div class="container">
+            <!-- Навигация сайта -->
             <div class="navigation">
+                <!-- Логотип сайта (а - ссылка, img - картинка) -->
                 <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+                <!-- ul - маркированный список -->
                 <ul class="nav">
                     <li>
                         <a href="#">
@@ -35,7 +45,7 @@
                             </ul>
                         </a>
                     </li>
-                    <li><a href="#">Скидки</a></li>
+                    <li><a href="discounts.html">Скидки</a></li>
                     <li><a href="index-EliteWatches.html">Элитные часы</a></li>
                     <li>
                         <a href="index-ManWatches.html">
@@ -68,6 +78,7 @@
             <div class="cards">
                 <div class="cards-item">
                     <div class="cards-img">
+                        <!-- onclick - вызывает функцию box1, которая покажет блок с классом(class) = box и с id = box1 -->
                         <div class="cards-link" onclick="openBox('box1');"><img src="img/EliteWatches/1.png" alt=""></div>  
                     </div>
                     <div class="cards-title">
@@ -76,7 +87,9 @@
                     <div class="cards-money">
                         2.100p
                     </div>
+                    <!-- Ссылка на страницу "info" - ввода данных пользователя -->
                     <a href="info.html" class="cards-button">Купить</a>
+                    <!-- По умолчанию имеет скрытый блок (none) -->
                     <div id="box1" class="box" style="display: none;">
                         <div class="bg-close" onclick="openBox('box1');"></div>
                         <div class="box__container">
@@ -90,6 +103,7 @@
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, maxime veniam. Magni laboriosam accusamus facilis.
                                     </p>
                                     <div class="box__sum">Цена - 2.100p</div>
+                                    <!-- Ссылка на страницу "info" - ввода данных пользователя -->
                                     <a href="info.html" class="cards-button box__button">Купить</a>
                                 </div>
                             </div>
@@ -98,6 +112,7 @@
                 </div>
                 <div class="cards-item">
                     <div class="cards-img">
+                        <!-- onclick - вызывает функцию box2, которая покажет блок с классом(class) = box и с id = box2 -->
                         <div class="cards-link" onclick="openBox('box2');"><img src="img/EliteWatches/2.png" alt=""></div>  
                     </div>
                     <div class="cards-title">
@@ -106,7 +121,9 @@
                     <div class="cards-money">
                         2.100p
                     </div>
+                    <!-- Ссылка на страницу "info" - ввода данных пользователя -->
                     <a href="info.html" class="cards-button">Купить</a>
+                    <!-- По умолчанию имеет скрытый блок (none) -->
                     <div id="box2" class="box" style="display: none;">
                         <div class="bg-close" onclick="openBox('box2');"></div>
                         <div class="box__container">
@@ -120,6 +137,7 @@
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, maxime veniam. Magni laboriosam accusamus facilis.
                                     </p>
                                     <div class="box__sum">Цена - 2.100p</div>
+                                    <!-- Ссылка на страницу "info" - ввода данных пользователя -->
                                     <a href="info.html" class="cards-button box__button">Купить</a>
                                 </div>
                             </div>
@@ -362,8 +380,8 @@
                     </div>
                     <div class="footer-navigation">
                         <ul class="nav">
-                            <li><a href="#">Бренды</a></li>
-                            <li><a href="#">Скидки</a></li>
+                            <li><a href="index.html">Бренды</a></li>
+                            <li><a href="discounts.html">Скидки</a></li>
                             <li><a href="index-EliteWatches.html">Элитные часы</a></li>
                             <li><a href="index-ManWatches.html">Мужские часы</a></li>
                             <li><a href="index-WomenWatches.html">Женские часы</a></li>
